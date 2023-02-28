@@ -32,10 +32,11 @@ a{
 .hero{
     display: block;
     text-align: center;
+    //width: fit-content;
 }
 
 h3{
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin-top: 0.9;
     margin-bottom: 0em;
     color: white;
@@ -56,7 +57,7 @@ h3{
 }
 
 .bigtextboy{
-    font-size: 2.7em;
+    font-size:4em;
     //width: 6em;
     text-align: center;
     color: var(--Primary-color);

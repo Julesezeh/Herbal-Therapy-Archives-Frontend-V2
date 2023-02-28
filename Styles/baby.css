@@ -33,7 +33,7 @@ a {
 }
 
 h3 {
-  font-size: 0.7em;
+  font-size: 0.9em;
   margin-top: 0.9;
   margin-bottom: 0em;
   color: white;
@@ -50,10 +50,11 @@ h3 {
   padding: 0.2em;
   margin-top: 1.1em;
   padding-top: 2.7em;
+  background-size: cover;
 }
 
 .bigtextboy {
-  font-size: 2.7em;
+  font-size: 4em;
   text-align: center;
   color: var(--Primary-color);
   font-weight: bolder;
