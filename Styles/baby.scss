@@ -5,6 +5,7 @@
 body{
     background-color: black;
     margin: 0;
+    width: 100%;
 }
 
 
@@ -13,8 +14,8 @@ nav{
 }
 
 .navmaindiv{
-    padding-top: 1.2em ;
-    padding-left: .9em ;
+    padding-top: 1.5em ;
+    padding-left: 1.5em ;
     padding-right: .9em ;
     padding-bottom: .3em ;
     display: flex;
@@ -32,15 +33,16 @@ a{
 .hero{
     display: block;
     text-align: center;
-    //width: fit-content;
+    height: 100%;
 }
 
 h3{
-    font-size: 0.9em;
+    font-size: 1,6em;
     margin-top: 0.9;
     margin-bottom: 0em;
     color: white;
     font-weight: lighter;
+    
 }
 
 .herosection{
@@ -58,10 +60,10 @@ h3{
 
 .bigtextboy{
     font-size:4em;
-    //width: 6em;
+    width: auto;
     text-align: center;
     color: var(--Primary-color);
-    font-weight: bolder;
+    font-weight: lighter;
     margin: 0;
     display: inline-block;
     text-shadow: (4.38843px 3.08264px 2.38843px rgba(0, 0, 0, 1));
@@ -72,16 +74,17 @@ h3{
     display: inline-block;
     height: 8em;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 7em;
 
 
     button{
+        font-weight: 2em;
         display: block;
         padding: 1em 3em;
         color: white;
         background-color: var(--Primary-color);
         border: none;
-        margin: 0.6em;
+        margin: 0.8em;
         border-radius: 1.7em;
         //margin-left: 7em;
         align-items: center;
