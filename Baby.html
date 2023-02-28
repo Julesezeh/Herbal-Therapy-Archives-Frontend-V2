@@ -12,21 +12,21 @@
                 <a>
                     <img class="logoimg" src="resources/IMG-20221019-WA0031.jpg" alt="logo">
                 </a>
-                <img class="menu-open" src="resources/menu button.svg" alt="open menu">
+                <img id="lego" class="menu-open" src="resources/menu button.svg" alt="open menu">
                 <nav>
-                    <img class="menu-exit" src="resources/menuclose button.svg" alt="close menu">
                     <div class="right">
+                    <img id="mobile-exit" class="menu-exit" src="resources/menuclose button.svg" alt="close menu">
                         <form action="/search" method="post">
                             <input type="hidden" name="csrfmiddlewaretoken" value="HMynm4Krwxn3kq8WdBNZ9fTFA1ZCaNuUnLIYkmt0DgBGws4zaQnGloHCe9urZhiU">
                             <input class="inputfield" style="color:black;" type="text" placeholder="search illnesses" name="result">
-                            <button class="search-button" tyle="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:lightgreen; background-color:rgb(48, 43, 43);">search</button>
+                            <button class="search-button" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:lightgreen; background-color:rgb(48, 43, 43);">search</button>
                           </form>
                   </div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Herbs</li>
-                        <li>Therapies</li>
-                        <li>About</li>
+                    <ul class="Primary">
+                        <li><a>Home</a></li>
+                        <li><a>Herbs</a></li>
+                        <li><a>Therapies</a></li>
+                        <li><a>About</a></li>
                     </ul>
                 </nav>
 
@@ -45,16 +45,31 @@
 
                 <div class="buttonholder">
                     <a href="/auth/login/">
-                        <button class="button-18">LOG IN</button>
+                        <button class="button-1">LOG IN</button>
                     </a>
 
                     <a href="/auth/signup/">
-                        <button class="button-18">SIGNUP</button>
+                        <button class="button-2">SIGNUP</button>
                     </a>
                 </div>    
 
             </div>
         </div>
     </section>
+
+          <script>
+          const mobileBtn = document.getElementById('lego')
+                nav = document.querySelector('nav');
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+            
+      </script>
 </body>
 </html>
