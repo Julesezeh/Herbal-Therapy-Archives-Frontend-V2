@@ -1,0 +1,1 @@
+The second version of the "Things my grandfather taught me" project's user interface.
