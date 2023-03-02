@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --Primary-color: rgb(114, 189, 92);
 }
@@ -6,6 +7,7 @@ body {
   background-color: black;
   margin: 0;
   width: 100%;
+  font-family: "poppins";
 }
 
 ul {
@@ -66,6 +68,8 @@ h3 {
 }
 
 .bigtextboy {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
   font-size: 4em;
   width: auto;
   text-align: center;
@@ -74,7 +78,7 @@ h3 {
   margin: 0;
   display: inline-block;
   text-shadow: 4.38843px 3.08264px 2.38843px rgb(0, 0, 0);
-  transition: font-weight 0.4s;
+  transition: font-weight 0.1s, margin 0.1s;
 }
 .bigtextboy:hover {
   font-weight: bolder;
@@ -84,10 +88,10 @@ h3 {
   display: inline-block;
   height: 8em;
   justify-content: center;
-  margin-top: 7em;
+  margin-top: 6em;
 }
 .buttonholder button {
-  font-weight: 3em;
+  font-weight: bold;
   font-size: 1.1em;
   display: block;
   padding: 1em 3.8em;
@@ -125,6 +129,10 @@ nav {
 }
 nav ul li a {
   color: var(--Primary-color);
+  transition: color 0.4s;
+}
+nav ul li a:hover {
+  color: white;
 }
 nav .right {
   display: block;
@@ -158,6 +166,9 @@ nav .search-button {
 nav .Primary {
   margin-top: 0.7em;
 }
+nav li {
+  transition: font-weight 0.4s;
+}
 nav li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -189,7 +200,7 @@ nav li:active {
     display: flex;
     padding-left: 4em;
     padding-right: 3em;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 0;
   }
   .navmaindiv nav {
@@ -204,31 +215,70 @@ nav li:active {
     display: flex;
   }
   .navmaindiv nav .right {
+    position: absolute;
+    right: 0;
     display: block;
     height: 39px;
     margin: 0;
+    margin-right: 4em;
     align-items: center;
   }
   .navmaindiv nav .right .inputfield {
     margin: 0;
     align-self: center;
+    font-size: 0.9em;
   }
   .navmaindiv nav ul {
     display: flex;
     padding: 0;
   }
   .navmaindiv nav ul li a {
-    padding: 0.1em 1em;
-    font-size: 1.3em;
+    padding: 0.1em 1.3em;
+    font-size: 1.1em;
+  }
+  .navmaindiv nav .main {
+    font-size: 1.4em;
+    margin-top: -5px;
   }
   .navmaindiv nav .menu-exit {
     display: none;
   }
   .buttonholder {
+    height: -moz-fit-content;
+    height: fit-content;
     display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 2em;
+    margin-left: 0;
+  }
+  .buttonholder .button-1 {
+    margin-left: 0;
+  }
+  .buttonholder button {
+    padding: 1em 3em;
   }
   .hero {
     display: block;
     text-align: left;
+    padding-left: 4.6em;
+  }
+  .heromaindiv {
+    margin-top: 5px;
+    padding-top: 4.4em;
+  }
+  h3 {
+    margin-top: 1em;
+  }
+  span {
+    display: block;
+  }
+  .bigtextboy {
+    font-size: 5em;
+    text-align: left;
+    transition: font size 0.2s;
+  }
+  .bigtextboy:hover {
+    font-size: 5.4em;
   }
 }/*# sourceMappingURL=baby.css.map */
