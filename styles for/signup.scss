@@ -71,9 +71,11 @@ a{
 }
 
 .subtext{
+    font-size: 01em;
     color: white;
     text-shadow: (4.38843px 3.08264px 2.38843px rgba(0, 0, 0, 0.7));
     margin: 3.3em;
+    margin-top: 0;
 }
 
 .bigtextboy{    
@@ -85,6 +87,7 @@ a{
     margin: 0;
     margin-bottom: 19px;
     text-shadow: (4.38843px 3.08264px 2.38843px rgba(0, 0, 0, 0.7));
+    cursor: default;
   
 }
 
@@ -130,7 +133,7 @@ input{
     border-radius: 1.7em;
     text-align: center;
     transition: background-color .4s;
-    margin-top: 42px;
+    margin-top: 32px;
     margin-bottom: 2em;
 
 
@@ -141,30 +144,6 @@ input{
         background-color: rgb(43, 82, 31);
     }
 }
-
-
-button-2{
-    font-weight: bold;
-    font-size: 1.1em;
-    display: block;
-    padding: 1em 3.8em;
-    color: white;
-    background-color: var(--Primary-color);
-    border: none;
-    margin: 0.8em;
-    border-radius: 1.7em;
-    align-items: center;
-    transition: background-color .4s;
-
-    &:hover{
-        background-color: rgb(70, 124, 54);
-    }
-    &:active{
-        background-color: rgb(43, 82, 31);
-    }
-}
-
-
 
 nav.menu-btn{
     display: block;
@@ -211,7 +190,7 @@ nav{
         width: max-content;
         //height: 2.4em;
         padding-left: .9em;
-        border-radius: 19px;
+        border-radius: 15px;
         font-size: 1em;
         border-width: 2px;
         border-style: solid;
@@ -256,6 +235,20 @@ nav{
         &:active{
             font-weight: lighter;
         }
+    }
+}
+
+@media only screen and (min-width: 576px){
+
+    input{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1182px){
+
+    input{
+        width: 35%;
     }
 }
 
@@ -330,7 +323,7 @@ nav{
         }
 
         display: flex;
- }
+    }
 
     .buttonholder{
         height: fit-content;
@@ -358,12 +351,23 @@ nav{
 
 
     span{
-        display: block;
+        display: none;
     }
 
     .bigtextboy{
         font-size: 5em;
         text-align: center;
         
+    }
+
+    input{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    input{
+        width: 35%;
     }
 }
