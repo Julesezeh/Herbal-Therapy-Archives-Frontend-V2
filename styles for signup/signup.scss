@@ -118,7 +118,11 @@ input{
     border-radius: 15px;
     border-style: solid;
     padding: 12px;
-    border-color: rgb(46, 45, 45);
+    border: none;
+}
+
+input:focus-visible{
+    border: 3px red;
 }
 
 .button{
@@ -194,15 +198,8 @@ nav{
         font-size: 1em;
         border-width: 2px;
         border-style: solid;
-        transition: height .4s,
-        margin-bottom .4s;
         background-color: rgb(228, 227, 227);
         border-color: rgb(165, 162, 162);
-
-        &:hover{
-            height: 3em;
-            margin-bottom: -1.4px;
-        }
 
     }
 
@@ -264,6 +261,7 @@ nav{
 
     .navmaindiv{
         display: flex;
+        justify-content: space-evenly;
         padding-left: 4em;
         padding-right: 3em;
         padding-top: 1em;

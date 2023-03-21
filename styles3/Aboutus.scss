@@ -42,21 +42,9 @@ a{
 .hero{
     display: block;
     text-align: center;
-    height: 100%;
+    //height: 100%;
 }
 
-h3{
-    font-size: 1,6em;
-    margin-top: 0.9;
-    margin-bottom: 0em;
-    color: white;
-    font-weight: lighter;
-    
-}
-
-.herosection{
-    height: 100%;
-}
 
 .menu-open{
     transition: margin-bottom .4s,
@@ -69,70 +57,72 @@ h3{
     background-image: url("../resources/background.svg");
     height: 100%;
     padding: .2em;
-    margin: 0.5em;
     margin-top: 1.1em;
+    margin: 0.5em;
     padding-top: 2.7em;
     background-size: cover;
     border-radius: 11px;
 }
 
-.bigtextboy{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
+.textbox{
+    display: block;
+    //background-color: pink;
+    margin-bottom: 0;
+}
+
+.subtext{
+    font-size: 01em;
+    color: white;
+    text-shadow: (4.38843px 3.08264px 2.38843px rgba(0, 0, 0, 0.7));
+    margin: 3.3em;
+    margin-top: 0;
+}
+
+.bigtextboy{    
     font-size:4em;
     width: auto;
     text-align: center;
     color: var(--Primary-color);
-    font-weight: lighter;
+    font-weight: bold;
     margin: 0;
-    margin-bottom: 0;
+    margin-bottom: 19px;
+    text-shadow: (4.38843px 3.08264px 2.38843px rgba(0, 0, 0, 0.7));
+    cursor: default;
+  
+}
+
+input{
+    width: 73%;
+    font-size: 15px;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 12px;
+    border: none;
+}
+
+.button{
+    font-weight: bold;
+    font-size: 1.1em;
     display: inline-block;
-    text-shadow: (4.38843px 3.08264px 2.38843px rgba(0, 0, 0, 1));
-    transition: font-weight .1s,
-    margin .1s;
-    
+    padding: 1em 3.8em;
+    color: white;
+    background-color: var(--Primary-color);
+    border: none;
+    margin: 0;
+    border-radius: 1.7em;
+    text-align: center;
+    transition: background-color .4s;
+    margin-top: 32px;
+    margin-bottom: 2em;
+
+
     &:hover{
-        margin-bottom: 0px;
-        margin-top: 0;
-        font-weight: bolder;
+        background-color: rgb(70, 124, 54);
+    }
+    &:active{
+        background-color: rgb(43, 82, 31);
     }
 }
-
-
-.buttonholder{
-    display: inline-block;
-    height: 8em;
-    justify-content: center;
-    margin-top: 6em;
-
-
-    button{
-        font-weight: bold;
-        font-size: 1.1em;
-        display: block;
-        padding: 1em 3.8em;
-        color: white;
-        background-color: var(--Primary-color);
-        border: none;
-        margin: 0.8em;
-        border-radius: 1.7em;
-        align-items: center;
-        transition: background-color .4s;
-
-        &:hover{
-            background-color: rgb(70, 124, 54);
-        }
-        &:active{
-            background-color: rgb(43, 82, 31);
-        }
-    }
-
-    a{
-        display: flex;
-        justify-content: center;
-    }
-}
-
 
 nav.menu-btn{
     display: block;
@@ -178,15 +168,15 @@ nav{
     .inputfield{
         width: max-content;
         //height: 2.4em;
-        padding: 12px;
+        padding-left: .9em;
         border-radius: 15px;
         font-size: 1em;
         border-width: 2px;
         border-style: solid;
         background-color: rgb(228, 227, 227);
         border-color: rgb(165, 162, 162);
-    }
 
+    }
 
     .search-button{
         display: none;
@@ -220,6 +210,7 @@ nav{
     }
 }
 
+
 @media only screen and (min-width: 1024px){
     section{
         width: fill;
@@ -249,19 +240,18 @@ nav{
         align-items: center;
         padding: 0;
 
-
         .right{
             position: absolute;
             right: 0;
             display: block;
-            height: 39px;
+            height: fit-content;
             margin: 0;
             margin-right: 4em;
             align-items: center;
 
             .inputfield{
                 margin: 0;
-                margin-top: -8px;
+                margin-top: 8px;
                 align-self: center;
                 font-size: .9em;
                 width: 17em;
@@ -290,55 +280,24 @@ nav{
         .menu-exit{
         display: none;
         }
-
-        display: flex;
- }
-
-    .buttonholder{
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        margin-top: 2em;
-        margin-left: 0;
-
-        .button-1{
-            margin-left: 0;
-        }
-
-        button{
-            padding: 1em 3em;
-        }
     }
+
    
     .hero{
         display: block;
-        text-align: left;
-        padding-left: 4.6em;
+        text-align: center;
+        //padding-left: 4.6em;
     }
 
     .heromaindiv{
+       
         margin-top: 5px;
-        padding-top: 4.4em;
-    }
-
-
-
-    h3{
-        margin-top: 1em;
-    }
-
-    span{
-        display: block;
+        padding-top: 3.4em;
     }
 
     .bigtextboy{
         font-size: 5em;
-        text-align: left;
-        transition: font size .2s;
-
-        &:hover{
-            font-size: 5.4em;
-        }
+        text-align: center;
+        
     }
 }
